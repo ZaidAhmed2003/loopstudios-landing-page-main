@@ -27,60 +27,116 @@
   </head>
   <body>
     <div class="header">
-      <nav class="container">
-          <a href="#" class="py-5 navbar-dark fs-2 navbar-brand"
-            ><img src="./images/logo.svg" alt=""
-          /></a>
-          <div>
-            <ul>
-              <li>
-                <a href="#">About</a>
+      <nav class="container px-3 navbar">
+        <a href="#" class="py-4 navbar-dark fs-2 navbar-brand"
+          ><img src="./images/logo.svg" alt=""
+        /></a>
+        <img
+          src="./images/icon-hamburger.svg"
+          class="navbar-toggler d-lg-none ms-auto"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample"
+          aria-controls="offcanvasExample"
+          aria-label="Toggle Navigation"
+        />
+        <div>
+          <ul class="d-lg-flex nav d-none d-lg-inline-block">
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Careers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Support</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Mobile offcanvas -->
+        <div
+          class="offcanvas w-100 offcanvas-start d-lg-none"
+          tabindex="-1"
+          id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel"
+        >
+          <div class="offcanvas-header container px-4">
+            <a class="offcanvas-title py-4" href="#" id="offcanvasExampleLabel">
+              <img src="./images/logo.svg" alt="" />
+            </a>
+            <img
+              src="./images/icon-close.svg"
+              class="close d-lg-none ms-auto"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasExample"
+              aria-controls="offcanvasExample"
+              aria-label="Toggle Navigation"
+            />
+          </div>
+          <div
+            class="small-screen container offcanvas-body d-flex justify-content-start align-items-center d-lg-none"
+          >
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
               </li>
-              <li>
-                <a href="#">Careers</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Careers</a>
               </li>
-              <li>
-                <a href="#">Events</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Events</a>
               </li>
-              <li>
-                <a href="#">Products</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Products</a>
               </li>
-              <li>
-                <a href="#">Support</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Support</a>
               </li>
             </ul>
-          
+          </div>
         </div>
       </nav>
-      <div class="container heading p-5">
+      <div class="container gx-lg-0 heading py-6">
         <h1>
           Immersive <br />
           experiences <br />
-          that deliver
+          that <br class="d-lg-none" />
+          deliver
         </h1>
       </div>
     </div>
-    
+
+    <div>
       <div>
-        <div>
-          <img src="./images/mobile/image-interactive.jpg" alt="" />
-        </div>
-        <div>
-          <h2>The leader in interactive VR</h2>
-          <p>
-            Founded in 2011, Loopstudios has been producing world-class virtual
-            reality projects for some of the best companies around the globe.
-            Our award-winning creations have transformed businesses through
-            digital experiences that bind to their brand.
-          </p>
-        </div>
+        <img
+          class="img-fluid"
+          src="./images/mobile/image-interactive.jpg"
+          alt=""
+        />
       </div>
-      <div>Our creations See all</div>
       <div>
-        Deep earth Night arcade Soccer team VR The grid From up above VR Pocket
-        borealis The curiosity Make it fisheye
+        <h2>The leader in interactive VR</h2>
+        <p>
+          Founded in 2011, Loopstudios has been producing world-class virtual
+          reality projects for some of the best companies around the globe. Our
+          award-winning creations have transformed businesses through digital
+          experiences that bind to their brand.
+        </p>
       </div>
     </div>
+    <div>Our creations See all</div>
+    <div>
+      Deep earth Night arcade Soccer team VR The grid From up above VR Pocket
+      borealis The curiosity Make it fisheye
+    </div>
+
     <div>
       <div>
         <h2>loopstudios</h2>
