@@ -1,12 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
 
 :root {
-  --alata: "Alata", sans-serif;
-  --josefin-Sans: "Josefin Sans", sans-serif;
+  /* Colors */
+
   --White: hsl(0, 0%, 100%);
   --Black: hsl(0, 0%, 0%);
   --Dark-Gray: hsl(0, 0%, 55%);
   --Very-Dark-Gray: hsl(0, 0%, 41%);
+
+  /* Fonts */
+  --Alata: "Alata", sans-serif;
+  --Josefin: "Josefin Sans", sans-serif;
+
+  /* Font Weight */
+  --Bolded: 400;
+  --Bold: 300;
+
+  /* Font Size */
+  --Font: 15px;
 }
 
 * {
@@ -16,90 +27,23 @@
   padding: 0;
 }
 
-body {
-  font-family: var(--alata);
-}
-
-.header {
-  background-image: url(./images/mobile/image-hero.jpg);
+header {
+  background: url(./images/mobile/image-hero.jpg) no-repeat;
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
   height: 100vh;
-}
-
-.nav-link {
-  color: white;
-  position: relative;
-}
-.nav-link:hover {
-  color: white;
-}
-.nav-link::after {
-  content: "";
-  position: absolute;
-  bottom: 10px;
-  left: 10%;
-  width: 30%;
-  height: 2px;
-  background-color: #ffffff;
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
-}
-
-.nav-link:hover::after {
-  transform: scaleX(1);
-}
-.small-screen {
-  font-family: var(--josefin-Sans);
-  font-size: 2.5rem;
-  color: white;
-}
-
-.navbar-toggler {
-  border: none;
-  height: 30px;
-  transition: transform 0.3s ease;
-}
-.navbar-toggler[aria-expanded="true"] {
-  transform: rotate(180deg);
-}
-.close {
-  height: 35px;
-  border: none;
-}
-.offcanvas {
-  background-color: var(--Black);
-}
-
-.heading h1 {
-  font-family: var(--josefin-Sans);
-  font-size: 3rem;
-  font-weight: 300;
-  text-transform: uppercase;
-
-  color: white;
-  border: 3px solid white;
-  padding: 20px 30px;
-}
-.heading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 85%;
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: #ffffff;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
 
-@media screen and (min-width: 768px) {
-  .header {
+/* @media screen and (min-width: 768px) {
+  header {
     background-image: url(./images/desktop/image-hero.jpg);
     background-size: cover;
   }
@@ -116,7 +60,7 @@ body {
     left: 35%;
     bottom: -2px;
   }
-}
+} */
 
 /* @media screen and (min-width: 576px) {
   .heading h1 {
