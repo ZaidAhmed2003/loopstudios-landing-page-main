@@ -11,94 +11,205 @@
       href="./images/favicon-32x32.png"
     />
     <title>Frontend Mentor | Loopstudios landing page</title>
-
     <!-- Style Sheets -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      crossorigin="anonymous"
-    />
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- Header Section-->
-
     <header>
-      <div class="container">
-        <nav>
-          <a href="#"><img src="./images/logo.svg" alt="logo" /></a>
-          <button><img src="./images/icon-hamburger.svg" alt="" /></button>
+      <div class="wrapper container">
+        <nav class="navbar">
+          <div class="nav__wrapper">
+            <div class="nav__logo">
+              <img src="./images/logo.svg" alt="logo" />
+            </div>
+            <div class="nav__links">
+              <ul>
+                <li>About</li>
+                <li>Careers</li>
+                <li>Events</li>
+                <li>Products</li>
+                <li>Support</li>
+              </ul>
+            </div>
+            <div class="nav__menu">
+              <img
+                src="./images/icon-hamburger.svg"
+                alt="menu"
+                onclick="openMenu()"
+              />
+            </div>
+          </div>
+          <div class="nav__collapse">
+            <div class="nav__wrapper container">
+              <div class="nav__logo">
+                <img src="./images/logo.svg" alt="logo" />
+              </div>
+              <div class="nav__menu">
+                <img
+                  src="./images/icon-close.svg"
+                  alt="menu"
+                  onclick="closeMenu()"
+                />
+              </div>
+            </div>
+            <ul class="container">
+              <li>About</li>
+              <li>Careers</li>
+              <li>Events</li>
+              <li>Products</li>
+              <li>Support</li>
+            </ul>
+          </div>
         </nav>
+        <div class="hero__container">
+          <div class="heading__container">
+            <h1>
+              Immersive <br />
+              Experiences <br />
+              That <br class="d-none" />
+              Deliver
+            </h1>
+          </div>
+        </div>
       </div>
     </header>
 
-    <!-- Header Section End-->
     <!-- Main -->
+    <main class="container">
+      <div class="interactive__container">
+        <div class="interactive__img">
+          <picture>
+            <source
+              media="(min-width:768px )"
+              srcset="./images/desktop/image-interactive.jpg"
+            />
+            <img
+              src="./images/mobile/image-interactive.jpg"
+              alt="man wearing vr"
+            />
+          </picture>
+        </div>
+        <div class="intractive__information">
+          <h2>the leader in interactive vr</h2>
+          <p>
+            Founded in 2011, Loopstudios has been producing world-class virtual
+            reality projects for some of the best companies around the globe.
+            Our award-winning creations hae transformed businesses through
+            digital experiences that bind to their brand
+          </p>
+        </div>
+      </div>
+      <div class="creations__container">
+        <div class="creations__text">
+          <h2>Our Creations</h2>
+        </div>
+        <div class="image__grid">
+          <div class="image__container">
+            <picture
+              ><source
+                srcset="./images/desktop/image-deep-earth.jpg"
+                media="(min-width:992px)" />
+              <img src="./images/mobile/image-deep-earth.jpg" alt=""
+            /></picture>
+            <p>deep<br />earth</p>
+          </div>
+          <div class="image__container">
+            <picture
+              ><source
+                media="(min-width:992px)"
+                srcset="./images/desktop/image-night-arcade.jpg" />
+              <img src="./images/mobile/image-night-arcade.jpg" alt=""
+            /></picture>
+            <p>night<br />arcade</p>
+          </div>
+          <div class="image__container">
+            <picture
+              ><source
+                media="(min-width:992px)"
+                srcset="./images/desktop/image-soccer-team.jpg" />
+              <img src="./images/mobile/image-soccer-team.jpg" alt=""
+            /></picture>
+            <p>soccer<br />team vr</p>
+          </div>
+          <div class="image__container">
+            <picture
+              ><source
+                media="(min-width:992px)"
+                srcset="./images/desktop/image-grid.jpg" />
+              <img src="./images/mobile/image-grid.jpg" alt=""
+            /></picture>
+            <p>the<br />grid</p>
+          </div>
+          <div class="image__container">
+            <picture
+              ><source
+                media="(min-width:992px)"
+                srcset="./images/desktop/image-from-above.jpg" />
+              <img src="./images/mobile/image-from-above.jpg" alt=""
+            /></picture>
+            <p>from up<br />above vr</p>
+          </div>
+          <div class="image__container">
+            <picture
+              ><source
+                media="(min-width:992px)"
+                srcset="./images/desktop/image-pocket-borealis.jpg" />
+              <img src="./images/mobile/image-pocket-borealis.jpg" alt=""
+            /></picture>
+            <p>pocket<br />borealis</p>
+          </div>
+          <div class="image__container">
+            <picture
+              ><source
+                media="(min-width:992px)"
+                srcset="./images/desktop/image-curiosity.jpg" />
+              <img src="./images/mobile/image-curiosity.jpg" alt=""
+            /></picture>
+            <p>the<br />curiosity</p>
+          </div>
+          <div class="image__container">
+            <picture
+              ><source
+                media="(min-width:992px)"
+                srcset="./images/desktop/image-fisheye.jpg" />
+              <img src="./images/mobile/image-fisheye.jpg" alt=""
+            /></picture>
+            <p>make it<br />fisheye</p>
+          </div>
+        </div>
+        <button class="btn">SEE ALL</button>
+      </div>
+    </main>
 
-    <!-- <div>
-      <div>
-        <img
-          class="img-fluid"
-          src="./images/mobile/image-interactive.jpg"
-          alt=""
-        />
-      </div>
-      <div>
-        <h2>The leader in interactive VR</h2>
-        <p>
-          Founded in 2011, Loopstudios has been producing world-class virtual
-          reality projects for some of the best companies around the globe. Our
-          award-winning creations have transformed businesses through digital
-          experiences that bind to their brand.
-        </p>
-      </div>
-    </div>
-    <div class="container section-2">Our creations See all</div>
-    <div class="row">
-      <div>
-        <img src="./images/mobile/image-deep-earth.jpg" alt="Deep earth" />
-      </div>
-      Deep earth Night arcade Soccer team VR The grid From up above VR Pocket
-      borealis The curiosity Make it fisheye
-    </div> -->
-    <!-- Main End -->
     <!-- Footer -->
-    <!-- <div class="footer text-center">
-      <div class="container pt-5 row-lg">
-        <div class="">
-          <a class="my-5" href="#"><img src="./images/logo.svg" alt="" /></a>
-          <ul
-            class="nav nav-lines my-4 d-flex justify-content-center align-items-center flex-column flex-lg-row"
-          >
-            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Careers</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
+
+    <footer>
+      <div class="footer__wrapper container">
+        <div class="footer__top">
+          <div><img src="./images/logo.svg" alt="" /></div>
+          <ul>
+            <li>About</li>
+            <li>Careers</li>
+            <li>Events</li>
+            <li>Products</li>
+            <li>Support</li>
           </ul>
         </div>
-        <div class="p-4">
-          <div class="d-flex justify-content-center flex-row">
-            <span class="px-2"
-              ><img src="./images/icon-facebook.svg" alt=""
-            /></span>
-            <span class="px-2"
-              ><img src="./images/icon-twitter.svg" alt=""
-            /></span>
-            <span class="px-2"
-              ><img src="./images/icon-pinterest.svg" alt=""
-            /></span>
-            <span class="px-2"
-              ><img src="./images/icon-instagram.svg" alt=""
-            /></span>
+        <div class="footer__bottom">
+          <div class="footer__icons">
+            <img src="./images/icon-facebook.svg  " alt="" />
+            <img src="./images/icon-twitter.svg" alt="" />
+            <img src="./images/icon-pinterest.svg" alt="" />
+            <img src="./images/icon-instagram.svg" alt="" />
           </div>
-          <p class="pt-3 text">© 2021 Loopstudios. All rights reserved.</p>
+          <p>© 2021 Loopstudios. All rights reserved.</p>
         </div>
       </div>
+    </footer>
 
-      <div class="attribution pb-2">
+    <!-- <div class="attribution pb-2">
         <p>
           Challenge by
           <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
@@ -108,15 +219,7 @@
       </div>
     </div> -->
 
-    <!-- Footer End -->
-
     <!-- Scripts -->
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-      crossorigin="anonymous"
-    ></script>
     <script src="index.js"></script>
     <!-- Scripts End -->
   </body>
